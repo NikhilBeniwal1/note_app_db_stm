@@ -24,10 +24,10 @@ class _NotesListState extends State<NotesList> {
         itemBuilder: (context, index) {
           return ListTile(
             title: Text("${
-             Provider.of<NotesProvider>(context).notes[index].title
+             Provider.of<NotesProvider>(context).notes[index].note_title
             }"),
             subtitle: Text("${
-            Provider.of<NotesProvider>(context).notes[index].description
+            Provider.of<NotesProvider>(context).notes[index].note_description
             }"),
           );
         },
